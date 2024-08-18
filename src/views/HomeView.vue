@@ -1,5 +1,5 @@
 <script setup>
-import { ref,onMounted  } from 'vue'
+import { ref, onMounted } from 'vue'
 import WelcomeComponent from "../components/WelcomeComponent.vue";
 import QuestionsCard from '@/components/QuestionsCard.vue'
 import DataService from '@/services/DataService.js'
@@ -9,7 +9,7 @@ const questions = ref([])
 onMounted(() => {
   DataService.getQuestions()
     .then((res) => {
-      questions.value = res.data
+      questions.value = res 
     })
     .catch((error) => {
       console.log(error);
@@ -27,11 +27,17 @@ onMounted(() => {
 </template>
 
 <style scoped>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1vh;
     margin: 1vh 0 0 0;
+    width: 50%;
   }
-</style>  
+</style>

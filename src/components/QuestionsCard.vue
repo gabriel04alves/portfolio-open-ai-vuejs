@@ -36,6 +36,7 @@ defineProps({
 
         text-align: start;
         color: #FFF;
+        text-decoration: none;
     }
     
     .questions-title:hover {

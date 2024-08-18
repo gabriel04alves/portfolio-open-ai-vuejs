@@ -25,17 +25,17 @@ const typeWriterEffect = (text, element, speed, callback) => {
     }, speed);
 }
 
-let ramdomNumber = Math.floor(Math.random() * (75 - 50 + 1)) + 50;
+let randomNumber = Math.floor(Math.random() * (75 - 50 + 1)) + 50;
 
 onMounted(async () => {
     try {
         const res = await DataService.getQuestion(props.id)
-        question.value = res.data
+        question.value = res // Define a pergunta como o resultado
         await nextTick();
         setTimeout(() => {
             typeWriterEffect(question.value.question, userText, 60, () => {
                 setTimeout(() => {
-                    typeWriterEffect(question.value.description, chatGPTText, ramdomNumber);
+                    typeWriterEffect(question.value.description, chatGPTText, randomNumber);
                 }, 500);
             });
         }, 1000);
@@ -63,7 +63,7 @@ onMounted(async () => {
         </div>
     </div>
 </template>
-  
+
 <style scoped>
     .content {
         display: flex;
@@ -72,29 +72,24 @@ onMounted(async () => {
         gap: 3.5vh;
         text-align: left;
     }
-
     .user, .chat-response {
         display: flex;
         flex-direction: column;
         gap: 1vh;
         padding: 0 15%;
     }
-
     .user div, .chat-response div {
         display: flex;
         gap: 2vw;
     }
-
     .user p, .chat-response p {
         margin-left: 3.5rem;
         font-size: 1rem;
         font-weight: 300;
     }
-
     .user h2, .chat-response h2 {
         font-size: 1.4rem;
     }
-
     img {
         width: 2rem;
     }

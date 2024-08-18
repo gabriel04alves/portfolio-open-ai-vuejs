@@ -19,7 +19,7 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/questions/:id',
+      path: '/response/:id',
       name: 'question-details',
       props: true,
       component: AnswerView
