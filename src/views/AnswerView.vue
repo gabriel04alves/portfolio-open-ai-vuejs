@@ -66,8 +66,8 @@ onMounted(async () => {
     <div class="content" v-if="question">
         <div class="user">
             <div>
-                <img src="../assets/images/user.svg" alt="">
                 <h2>Você</h2>
+                <img src="../assets/images/user.svg" alt="">
             </div>
             <p>{{ userText }}</p>
         </div>
@@ -90,7 +90,36 @@ onMounted(async () => {
     text-align: left;
 }
 
-.user,
+/* Estilos para a classe user */
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 0 15%;
+    align-self: end;
+}
+
+.user div {
+    display: flex;
+    justify-content: end;
+    gap: 1vw;
+    align-items: center;
+}
+
+.user p {
+    margin-right: 2vw;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: #2f2f2f;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.user h2 {
+    font-size: 1.4rem;
+}
+
+/* Estilos para a classe chat-response */
 .chat-response {
     display: flex;
     flex-direction: column;
@@ -98,28 +127,28 @@ onMounted(async () => {
     padding: 0 15%;
 }
 
-.user div,
 .chat-response div {
     display: flex;
-    gap: 2vw;
+    gap: 1vw;
+    align-items: center;
 }
 
-.user p,
 .chat-response p {
-    margin-left: 3.5rem;
+    margin-left: 2vw;
     font-size: 1rem;
     font-weight: 300;
 }
 
-.user h2,
 .chat-response h2 {
     font-size: 1.4rem;
 }
 
+/* Estilo comum para imagens */
 img {
     width: 2rem;
 }
 
+/* Estilos para o cursor */
 .cursor {
     display: inline-block;
     animation: blink 0.8s steps(2, start) infinite;
@@ -129,6 +158,12 @@ img {
 @keyframes blink {
     to {
         visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 480px) {     
+    .user p, .chat-response p {
+        margin: 0rem;
     }
 }
 </style>
