@@ -1,0 +1,53 @@
+{
+    "questions": [
+        {
+            "id": "1",
+            "title": "DALL-E 3",
+            "question": "Fale sobre o DALL-E 3",
+            "description": "Com minha integração ao DALL·E 3, posso transformar descrições textuais em imagens detalhadas e realistas. Basta você me fornecer uma description, e eu crio uma imagem que corresponde exatamente ao que você imaginou. É uma maneira poderosa de dar vida às suas ideias visuais.",
+            "url": "url"
+        },
+        {
+            "id": "2",
+            "title": "Sora",
+            "question": "O que você faz no Sora?",
+            "description": "No Sora, minha habilidade de interpretar a linguagem natural permite transformar comandos textuais em conteúdo visual dinâmico. Posso criar legendas detalhadas para imagens e até animar gráficos estáticos, resultando em vídeos inovadores. Isso impulsiona a criação de conteúdo mais avançado, ajudando a moldar experiências visuais que simulam a realidade.",
+            "url": "url"
+        },
+        {
+            "id": "3",
+            "title": "GitHub Copilot",
+            "question": "Me conte sobre o GitHub Copilot",
+            "description": "Quando estou integrado ao GitHub Copilot, ajudo você a escrever código de forma mais eficiente. Posso sugerir trechos de código e completar linhas ou blocos automaticamente, economizando seu tempo. Ao entender o que você quer fazer, posso prever e sugerir a próxima etapa, reduzindo erros e melhorando a qualidade do seu trabalho.",
+            "url": "url"
+        },
+        {
+            "id": "4",
+            "title": "Duolingo Max",
+            "question": "E sua participação no Duolingo Max?",
+            "description": "No Duolingo Max, sou seu assistente pessoal de idiomas. Ofereço explicações detalhadas de gramática e vocabulário, e crio exercícios personalizados para ajudar no seu aprendizado. Durante as conversas simuladas, respondo em tempo real para que você possa praticar suas habilidades linguísticas de forma interativa e eficaz.",
+            "url": "url"
+        },
+        {
+            "id": "5",
+            "title": "Sobre",
+            "question": "Quem é você?",
+            "description": "Eu sou o ChatGPT, criado pela OpenAI. Minha missão é ser uma IA útil e amigável, capaz de ajudar você em várias tarefas, desde responder perguntas a gerar ideias criativas. Estou aqui para oferecer informações precisas e engajar em conversas que sejam tanto interessantes quanto relevantes para você.",
+            "url": "url"
+        },
+        {
+            "id": "6",
+            "title": "Habilidades",
+            "question": "Me fale sobre suas habilidades...",
+            "description": "Minhas habilidades como IA incluem entender e interpretar a linguagem humana, gerar textos que soam naturais, manter o contexto durante longas conversas e fornecer respostas relevantes e precisas. Também sou bom em criar conteúdo original, traduzir entre idiomas, sumarizar textos longos e ajudar a completar frases ou ideias. Tudo isso é possível graças ao meu treititlento em vastas quantidades de dados textuais.",
+            "url": "url"
+        },
+        {
+            "id": "7",
+            "title": "Participação em projetos",
+            "question": "Conte sobre sua participação em projetos",
+            "description": "Faço parte de diversos projetos incríveis! No Be My Eyes, ajudo pessoas com deficiência visual. No Stripe Docs, simplifico documentos complexos. Na Morgan Stanley, organizo e torno o conhecimento sobre gestão de patrimônios mais acessível. Na Khan Academy, sou o Khanmigo, um tutor virtual. Também participo de iniciativas como ChatSonic e Petey, onde melhoro a interação com chatbots e forneço respostas precisas. Esses são apenas alguns exemplos, mas minha presença se estende por diversos campos, sempre buscando facilitar a vida das pessoas e aprimorar suas experiências.",
+            "url": "url"
+        }
+    ]
+  }
