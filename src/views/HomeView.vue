@@ -40,4 +40,9 @@ onMounted(() => {
     margin: 1vh 0 0 0;
     width: 50%;
   }
+  @media only screen and (max-width: 480px) {
+    .content {
+      margin-bottom: 3.5vh;
+    }      
+  }
 </style>

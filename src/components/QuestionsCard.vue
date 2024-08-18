@@ -12,7 +12,7 @@ defineProps({
 
 <template>
     <RouterLink class="link" :to="{ name: 'question-details', params: { id: question.id }}">
-        <div class="questions-title">
+        <div class="question-container">
             <h2>{{ question.title }}</h2>
             <span>{{ question.question }}</span>
         </div>
@@ -23,7 +23,7 @@ defineProps({
     .link {
         text-decoration: none;
     }
-    .questions-title {
+    .question-container {
         display: flex;
         flex-direction: column;
         
@@ -39,18 +39,24 @@ defineProps({
         text-decoration: none;
     }
     
-    .questions-title:hover {
+    .question-container:hover {
         background-color: #2c2c2c;
     }
     
-    .questions-title h2 {
+    .question-container h2 {
         font-size: 1.1rem;
         font-weight: 600;
     }
     
-    .questions-title span {
+    .question-container span {
         font-size: 0.9rem;
         color: #919191;
         font-weight: 400;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .question-container {
+            width: 60vw;
+        }
     }
 </style>

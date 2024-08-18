@@ -73,7 +73,7 @@ onMounted(async () => {
         </div>
         <div class="chat-response">
             <div>
-                <img src="../assets/images/open-ai-logo-circle.svg" alt="">
+                <img src="../assets/images/logo-openai.svg" alt="">
                 <h2>ChatGPT</h2>
             </div>
             <p v-html="chatGPTText"></p>
