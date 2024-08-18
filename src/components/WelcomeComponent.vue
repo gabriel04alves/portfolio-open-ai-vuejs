@@ -5,7 +5,7 @@
 <template>
     <div class="welcome-component">
         <img src="../assets/images/logo-openai.svg" alt="" class="logo-icon">
-        <h1>Bem-vindo ao meu portifólio!</h1>
+        <h1>Bem-vindo ao meu portfólio!</h1>
     </div>        
 </template>
 <style>

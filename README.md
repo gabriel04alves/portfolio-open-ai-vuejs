@@ -1,35 +1,54 @@
-# portfolio-open-ai
+## Portfólio Pessoal da OpenAI
 
-This template should help get you started developing with Vue 3 in Vite.
+<a href="https://portfolio-open-ai.surge.sh/">
+    <img src="./src/assets/images/home.png">
+</a>
 
-## Recommended IDE Setup
+#
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+O Portfólio Pessoal da OpenAI foi desenvolvido durante a disciplina de Desenvolvimento Web I do curso de Bacharelado em Sistemas de Informação, com colaboração de Gabriel L. Pereira, Gustavo H. B. Velho e Maria E. N. Ferreira.
+Ele apresenta de forma interativa as capacidades do GPT-4, a inteligência artificial da OpenAI, como se fosse uma entidade com seu próprio portfólio de realizações. Desenvolvido com VueJS, o portfólio destaca os usos do GPT.
 
-## Customize configuration
+Deploy: https://portfolio-open-ai.surge.sh/
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Instalação
 
-## Project Setup
+1. Clone este repositório:
+    ```bash
+    git clone https://github.com/gabriel04alves/portfolio-open-ai-vuejs
+    ```
+   
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd chatgpt-portfolio
+    ```
 
-```sh
-npm install
-```
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
 
-### Compile and Hot-Reload for Development
+4. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
 
-```sh
-npm run dev
-```
+5. Acesse o projeto no navegador:
+    ```
+    http://localhost:3000
+    ```
 
-### Compile and Minify for Production
+## Estrutura de Pastas
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+```bash
+├── public/                # Arquivos públicos (imagens, ícones)
+├── src/
+│   ├── assets/            # Recursos de mídia
+│   ├── components/        # Componentes Vue reutilizáveis
+│   ├── services/          # Lógica para chamadas à API
+│   ├── views/             # Páginas principais da aplicação
+│   ├── router/            # Configuração de rotas
+│   └── App.vue            # Componente raiz
+├── .gitignore             # Arquivos e diretórios ignorados pelo Git
+├── package.json           # Dependências e scripts do projeto
+└── README.md              # Documentação do projeto
