@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="welcome-component">
+    <div class="welcome-component" data-aos="zoom-in">
         <img src="../assets/images/logo-openai.svg" alt="" class="logo-icon">
         <h1>Bem-vindo ao meu portfólio!</h1>
     </div>        

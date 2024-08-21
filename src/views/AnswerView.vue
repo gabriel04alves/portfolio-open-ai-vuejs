@@ -42,7 +42,7 @@ const typeWriterEffectChatGPT = (text, element, speed, callback) => {
     }, speed);
 }
 
-let randomNumber = Math.floor(Math.random() * (75 - 50 + 1)) + 50;
+let randomNumber = Math.floor(Math.random() * (75 - 40 + 1)) + 50;
 
 onMounted(async () => {
     try {
@@ -65,15 +65,15 @@ onMounted(async () => {
 <template>
     <div class="content" v-if="question">
         <div class="user">
-            <div>
+            <div data-aos="zoom-in-left">
                 <h2>Você</h2>
-                <img src="../assets/images/user.svg" alt="">
+                <img src="../assets/images/user.svg" alt="User image">
             </div>
             <p>{{ userText }}</p>
         </div>
         <div class="chat-response">
-            <div>
-                <img src="../assets/images/logo-openai.svg" alt="">
+            <div data-aos="zoom-in-right">
+                <img src="../assets/images/logo-openai.svg" alt="OpenAI logo">
                 <h2>ChatGPT</h2>
             </div>
             <p v-html="chatGPTText"></p>
@@ -102,7 +102,7 @@ onMounted(async () => {
 .user div {
     display: flex;
     justify-content: end;
-    gap: 1vw;
+    gap: 0.8vw;
     align-items: center;
 }
 
@@ -116,7 +116,7 @@ onMounted(async () => {
 }
 
 .user h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 /* Estilos para a classe chat-response */
@@ -129,7 +129,7 @@ onMounted(async () => {
 
 .chat-response div {
     display: flex;
-    gap: 1vw;
+    gap: 0.8vw;
     align-items: center;
 }
 
@@ -140,7 +140,7 @@ onMounted(async () => {
 }
 
 .chat-response h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 /* Estilo comum para imagens */

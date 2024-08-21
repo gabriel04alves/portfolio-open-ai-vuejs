@@ -21,7 +21,14 @@ onMounted(() => {
   <main>
     <WelcomeComponent/>
     <div class="content">
-      <QuestionsCard v-for="question in questions" :key="question.id" :question="question" />
+      
+      <QuestionsCard 
+        v-for="question in questions" 
+        :key="question.id" 
+        :question="question" 
+        data-aos="zoom-in"
+      />
+
     </div>
   </main>
 </template>

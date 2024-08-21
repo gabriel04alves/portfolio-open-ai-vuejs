@@ -1,6 +1,6 @@
 <template>
   <div>
-    <RouterLink to="/" class="home-button">
+    <RouterLink to="/" class="home-button" data-aos="zoom-in">
         ChatGPT
         <img src="../assets/images/chvron-down.svg" alt="">
     </RouterLink>
