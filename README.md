@@ -7,7 +7,7 @@
 #
 
 O Portfólio Pessoal da OpenAI foi desenvolvido durante a disciplina de Desenvolvimento Web I do curso de Bacharelado em Sistemas de Informação, com colaboração de Gabriel L. Pereira, Gustavo H. B. Velho e Maria E. N. Ferreira.
-Ele apresenta de forma interativa as capacidades do GPT-4, a inteligência artificial da OpenAI, como se fosse uma entidade com seu próprio portfólio de realizações. Desenvolvido com VueJS, o portfólio destaca os usos do GPT.
+Ele apresenta de forma interativa as capacidades do GPT, a inteligência artificial da OpenAI, como se fosse uma entidade com seu próprio portfólio de realizações. Desenvolvido com VueJS, o portfólio destaca os usos do GPT.
 
 Deploy: https://portfolio-open-ai.surge.sh/
 
@@ -20,7 +20,7 @@ Deploy: https://portfolio-open-ai.surge.sh/
    
 2. Navegue até o diretório do projeto:
     ```bash
-    cd chatgpt-portfolio
+    cd portfolio-open-ai-vuejs
     ```
 
 3. Instale as dependências:
@@ -30,12 +30,12 @@ Deploy: https://portfolio-open-ai.surge.sh/
 
 4. Inicie o servidor de desenvolvimento:
     ```bash
-    npm run dev
+    vite
     ```
 
 5. Acesse o projeto no navegador:
     ```
-    http://localhost:3000
+    http://localhost:5173/
     ```
 
 ## Estrutura de Pastas
@@ -46,6 +46,7 @@ Deploy: https://portfolio-open-ai.surge.sh/
 │   ├── assets/            # Recursos de mídia
 │   ├── components/        # Componentes Vue reutilizáveis
 │   ├── services/          # Lógica para chamadas à API
+│   ├── style/             # Estilos globais
 │   ├── views/             # Páginas principais da aplicação
 │   ├── router/            # Configuração de rotas
 │   └── App.vue            # Componente raiz
